@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/menu_Rank"
+        android:title="솔로랭크 랭킹 (챌린저 상위 200명)"/>
+</menu>

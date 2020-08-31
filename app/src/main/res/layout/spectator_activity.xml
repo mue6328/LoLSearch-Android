@@ -1,0 +1,204 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="16dp"
+        android:text="블루 팀"
+        android:textSize="18dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="레드 팀"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="8dp"
+        android:textSize="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <LinearLayout
+        android:id="@+id/lLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spectatorRecyclerView"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            tools:listitem="@layout/spectator_item_red" />
+
+        <androidx.recyclerview.widget.RecyclerView
+            android:id="@+id/spectatorRecyclerView2"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:layout_weight="1"
+            android:overScrollMode="never"
+            tools:listitem="@layout/spectator_item_blue" />
+
+    </LinearLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밴(블루)"
+        android:textSize="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginStart="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="밴(레드)"
+        android:textSize="18dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        app:layout_constraintBottom_toTopOf="@+id/linearLayout2"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginTop="48dp"
+        android:orientation="horizontal"
+        app:layout_constraintTop_toBottomOf="@id/lLayout">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ban1"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="36dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ban2"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toEndOf="@+id/ban1"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ban3"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ban1" />
+
+            <ImageView
+                android:id="@+id/ban4"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toEndOf="@+id/ban3"
+                app:layout_constraintTop_toBottomOf="@+id/ban1" />
+
+            <ImageView
+                android:id="@+id/ban5"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toEndOf="@+id/ban4"
+                app:layout_constraintTop_toBottomOf="@+id/ban1" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_weight="1">
+
+            <ImageView
+                android:id="@+id/ban6"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="46dp"
+                android:layout_marginTop="36dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ban7"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="36dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toEndOf="@+id/ban6"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <ImageView
+                android:id="@+id/ban8"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="8dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/ban6" />
+
+            <ImageView
+                android:id="@+id/ban9"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toEndOf="@+id/ban8"
+                app:layout_constraintTop_toBottomOf="@+id/ban6" />
+
+            <ImageView
+                android:id="@+id/ban10"
+                android:layout_width="128px"
+                android:layout_height="128px"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:background="#d3d3d3"
+                app:layout_constraintStart_toEndOf="@+id/ban9"
+                app:layout_constraintTop_toBottomOf="@+id/ban6" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/winorLose"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="16dp"
+        android:layout_marginTop="32dp"
+        android:text="승리"
+        android:textSize="24dp"
+        android:textStyle="bold"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/queueType"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginStart="196dp"
+        android:text="일반"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/gameDuration"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:layout_marginEnd="8dp"
+        android:text="게임 시간"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/queueType"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:layout_marginTop="100dp">
+
+            <LinearLayout
+                android:id="@+id/team1"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorBlue"
+                android:layout_marginTop="100dp">
+
+                <TextView
+                    android:id="@+id/teamWinorLose"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    android:text="승리 (블루)" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/matchDetailRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:overScrollMode="never"
+                tools:listitem="@layout/matchdetail_item" />
+
+            <LinearLayout
+                android:id="@+id/team2"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:background="@color/colorRed">
+
+                <TextView
+                    android:id="@+id/teamWinorLose2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginStart="8dp"
+                    android:textSize="18dp"
+                    android:textColor="#FFFFFF"
+                    android:text="패배 (레드)" />
+
+            </LinearLayout>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/matchDetailRecyclerView2"
+                android:layout_width="match_parent"
+                android:overScrollMode="never"
+                android:layout_height="350dp"
+                tools:listitem="@layout/matchdetail_item"/>
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</ScrollView>

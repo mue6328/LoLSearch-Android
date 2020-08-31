@@ -1,25 +1,25 @@
 package com.example.lolsearch.dto
 
-data class League(
+data class Ranking(
     var queueType: String,
     var summonerName: String,
     var hotStreak: Boolean,
-    var miniSeries: MiniSeries,
     var wins: Int,
     var veteran: Boolean,
     var losses: Int,
     var rank: String,
-    var leagueId: String,
+    var tier: String,
     var inactive: Boolean,
     var freshBlood: Boolean,
-    var tier: String,
+    var leagueId: String,
     var summonerId: String,
     var leaguePoints: Int
 )
 
-data class MiniSeries(
-    var progress: String,
-    var losses: Int,
-    var target: Int,
-    var wins: Int
+data class RankingInfo(
+    var ranking: String,
+    var summonerName: String,
+    var summonerTier: String,
+    var summonerLP: String,
+    var summonerId: String
 )

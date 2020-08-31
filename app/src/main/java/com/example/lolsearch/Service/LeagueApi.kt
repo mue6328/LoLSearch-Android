@@ -1,6 +1,6 @@
 package com.example.lolsearch.Service
 
-import com.example.lolsearch.DTO.League
+import com.example.lolsearch.dto.League
 import retrofit2.Call
 import retrofit2.http.GET
 import retrofit2.http.Header
