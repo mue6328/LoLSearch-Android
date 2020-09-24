@@ -82,8 +82,8 @@ class SummonerActivity : AppCompatActivity() {
                             startActivity(intent)
                         }
 
-                        Glide.with(applicationContext)
-                            .load("https://ddragon.leagueoflegends.com/cdn/9.23.1/img/profileicon/$profileImage.png")
+                        val into = Glide.with(applicationContext)
+                            .load("https://ddragon.leagueoflegends.com/cdn/10.19.1/img/profileicon/$profileImage.png")
                             .into(summonerIcon)
 
                         leagueApi.getSummonerLeague(Utils.riotToken, id)

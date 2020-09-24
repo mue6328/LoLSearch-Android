@@ -266,6 +266,9 @@ class MatchDetailActivity : AppCompatActivity() {
                                 Utils.version_item +
                                         response.body()!!.participants[i].stats.item5 + ".png",
 
+                                Utils.version_item +
+                                        response.body()!!.participants[i].stats.item6 + ".png",
+
                                 response.body()!!.participants[i].stats.goldEarned,
                                 response.body()!!.participants[i].stats.totalMinionsKilled + response.body()!!.participants[i].stats.neutralMinionsKilled,
                                 response.body()!!.participants[i].stats.totalDamageDealtToChampions,
@@ -340,6 +343,9 @@ class MatchDetailActivity : AppCompatActivity() {
 
                                 Utils.version_item +
                                         response.body()!!.participants[i].stats.item5 + ".png",
+
+                                Utils.version_item +
+                                        response.body()!!.participants[i].stats.item6 + ".png",
 
                                 response.body()!!.participants[i].stats.goldEarned,
                                 response.body()!!.participants[i].stats.totalMinionsKilled + response.body()!!.participants[i].stats.neutralMinionsKilled,

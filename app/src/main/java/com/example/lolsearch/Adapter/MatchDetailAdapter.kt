@@ -72,6 +72,10 @@ class MatchDetailAdapter : RecyclerView.Adapter<MatchDetailAdapter.Holder>() {
             .into(holder.item5)
 
         Glide.with(holder.itemView.context)
+            .load(matchDetailInfo[position].item6)
+            .into(holder.item6)
+
+        Glide.with(holder.itemView.context)
             .load(matchDetailInfo[position].spell1Id)
             .into(holder.spell1)
 
@@ -95,9 +99,9 @@ class MatchDetailAdapter : RecyclerView.Adapter<MatchDetailAdapter.Holder>() {
 
         holder.summonerName.text = matchDetailInfo[position].summonerName
         holder.kda.text = "" + matchDetailInfo[position].kills + " / " +  matchDetailInfo[position].deaths + " / " + matchDetailInfo[position].assists
-        holder.csGold.text = "" + String.format("%4d", matchDetailInfo[position].cs) + " / " + matchDetailInfo[position].goldEarned / 100 + " G"
+        holder.csGold.text = "" + String.format("%4d", matchDetailInfo[position].cs) + " / " + String.format("%.1f", matchDetailInfo[position].goldEarned / 1000.0)  + "k"
 
-        String.format("%,.1f", matchDetailInfo[position].goldEarned / 100.0)
+        String.format("%.1f", matchDetailInfo[position].goldEarned / 100.0)
 
         holder.matchDetailLayout.setOnClickListener {
             var intent = Intent(holder.itemView.context, SummonerActivity::class.java)
@@ -121,6 +125,7 @@ class MatchDetailAdapter : RecyclerView.Adapter<MatchDetailAdapter.Holder>() {
         var item3 = itemView.findViewById<ImageView>(R.id.item3)!!
         var item4 = itemView.findViewById<ImageView>(R.id.item4)!!
         var item5 = itemView.findViewById<ImageView>(R.id.item5)!!
+        var item6 = itemView.findViewById<ImageView>(R.id.item6)!!
         var csGold = itemView.findViewById<TextView>(R.id.csGold)!!
         var mainRune = itemView.findViewById<ImageView>(R.id.mainRune)!!
         var subRune = itemView.findViewById<ImageView>(R.id.subRune)!!

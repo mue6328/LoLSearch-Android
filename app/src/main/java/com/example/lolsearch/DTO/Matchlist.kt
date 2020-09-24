@@ -257,6 +257,7 @@ data class MatchDetail (
     var item3: String,
     var item4: String,
     var item5: String,
+    var item6: String,
     var goldEarned: Int,
     var cs: Int,
     var championDealt: Long,

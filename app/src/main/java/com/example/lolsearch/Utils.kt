@@ -7,11 +7,11 @@ class Utils {
     companion object {
         private const val BASE_URL = "https://kr.api.riotgames.com"
 
-        val version_champion = "https://ddragon.leagueoflegends.com/cdn/10.10.3216176/img/champion/"
+        val version_champion = "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/champion/"
 
-        val version_spell = "https://ddragon.leagueoflegends.com/cdn/10.10.3216176/img/spell/"
+        val version_spell = "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/spell/"
 
-        val version_item = "https://ddragon.leagueoflegends.com/cdn/10.10.3216176/img/item/"
+        val version_item = "https://ddragon.leagueoflegends.com/cdn/10.19.1/img/item/"
 
         val championMap = hashMapOf(-1 to "null", 1 to "Annie", 2 to "Olaf", 3 to "Galio", 4 to "TwistedFate",
             5 to "XinZhao", 6 to "Urgot", 7 to "Leblanc", 8 to "Vladimir", 9 to "Fiddlesticks", 10 to "Kayle", 11 to "MasterYi",
@@ -32,10 +32,11 @@ class Utils {
             141 to "Kayn", 142 to "Zoe", 143 to "Zyra", 145 to "Kaisa", 150 to "Gnar", 154 to "Zac", 157 to "Yasuo",
             161 to "Velkoz", 163 to "Taliyah", 164 to "Camille", 201 to "Braum", 202 to "Jhin", 203 to "Kindred",
             222 to "Jinx", 223 to "TahmKench", 235 to "Senna", 236 to "Lucian", 240 to "Kled", 238 to "Zed",
-            245 to "Ekko", 246 to "Qiyana", 254 to "Vi", 266 to "Aatrox", 267 to "Nami", 350 to "Yuumi",
+            245 to "Ekko", 246 to "Qiyana", 254 to "Vi", 266 to "Aatrox", 267 to "Nami", 350 to "Yuumi", 360 to "Samira",
             268 to "Azir", 412 to "Thresh", 420 to "Illaoi", 421 to "RekSai",
             427 to "Ivern", 429 to "Kalista", 432 to "Bard", 497 to "Rakan", 498 to "Xayah",
-            516 to "Ornn", 517 to "Sylas", 518 to "Neeko", 523 to "Aphelios", 555 to "Pyke", 875 to "Sett")
+            516 to "Ornn", 517 to "Sylas", 518 to "Neeko", 523 to "Aphelios", 555 to "Pyke", 777 to "Yone",
+            875 to "Sett", 876 to "Lillia")
 
         val spellMap = hashMapOf(1 to "SummonerBoost", 3 to "SummonerExhaust", 4 to "SummonerFlash",
             6 to "SummonerHaste", 7 to "SummonerHeal", 11 to "SummonerSmite", 12 to "SummonerTeleport", 13 to "SummonerMana",

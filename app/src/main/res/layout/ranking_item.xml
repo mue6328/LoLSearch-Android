@@ -43,6 +43,7 @@
             android:layout_marginStart="230dp"
             android:background="@color/colorRed"
             android:text="C1"
+            android:textColor="#FFFFFF"
             android:textAlignment="center"
             android:textSize="18dp"
             app:layout_constraintBottom_toBottomOf="parent"
